@@ -78,5 +78,65 @@
         </tr>
       </tbody>
     </table>
+
+    <br />
+
+    <!--*Forms-->
+    <form action="unknownFile.php" method="POST">
+      <div>
+        <label>First Name: </label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="Enter your First Name here"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Last Name: </label>
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Enter your Last Name here"
+        />
+      </div>
+      <br />
+      <div>
+        <label>Email: </label>
+        <input type="email" name="email" placeholder="Email here" />
+      </div>
+      <br />
+      <div>
+        <label>Message: </label>
+        <textarea name="message"></textarea>
+      </div>
+      <br />
+      <div>
+        <label>Gender: </label>
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Age: </label>
+        <input type="number" name="age" value="30" />
+      </div>
+      <br />
+      <div>
+        <label>Birthday: </label>
+        <input type="date" name="birthday" />
+      </div>
+      <br />
+      <input type="submit" name="submit" value="Submit" />
+    </form>
+
+    <br />
+    <!--*Button-->
+    <!--?button tag need some event to do something-->
+    <button title="i am nothing without java-script">Click Me</button>
+
+    <!--*images <img>-->
   </body>
 </html>
