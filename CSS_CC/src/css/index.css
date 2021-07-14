@@ -1,3 +1,10 @@
-h1 {
-  color: green;
+body {
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  /**short-hand property for font*/
+  font: normal 20px Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6em;
 }
