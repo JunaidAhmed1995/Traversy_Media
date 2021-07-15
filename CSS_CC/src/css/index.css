@@ -1,3 +1,6 @@
+/*?Universal Selector (*{}) */
+/* * {} */
+
 body {
   background-color: #f4f4f4;
   color: #555;
@@ -7,4 +10,25 @@ body {
   /**short-hand property for font*/
   font: normal 20px Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.box-1 {
+  background-color: #333;
+  color: #fff;
+  border-top: 5px solid #f00;
+  border-right: 10px solid blue;
+  border-bottom: 15px dotted green;
+  border-left: 20px solid yellow;
+  /**short hand property for border*/
+  border: 5px solid coral;
+  /**padding*/
+  padding: 20px;
+  /**margin*/
+  margin: 20px 0px;
 }
