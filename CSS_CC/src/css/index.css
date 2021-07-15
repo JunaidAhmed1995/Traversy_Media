@@ -32,3 +32,14 @@ body {
   /**margin*/
   margin: 20px 0px;
 }
+
+/**this target the [h1] element in the class [box-1] */
+.box-1 h1 {
+  font-family: Tahoma;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
