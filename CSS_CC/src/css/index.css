@@ -32,6 +32,10 @@ body {
   border-radius: 10px;
 }
 
+.clear-float {
+  clear: both;
+}
+
 .footer {
   margin-top: 500px;
 }
@@ -126,4 +130,33 @@ a:active {
 .my-form textarea {
   padding: 8px;
   width: 100%;
+}
+
+.block {
+  float: left;
+  width: 33.3%;
+  border: 1px solid #ccc;
+  padding: 5px 20px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+
+.main-block,
+.side-bar {
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.main-block {
+  float: left;
+  width: 70%;
+}
+
+.side-bar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: wheat;
 }
