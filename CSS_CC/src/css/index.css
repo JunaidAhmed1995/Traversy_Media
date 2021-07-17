@@ -190,3 +190,23 @@ a:active {
   border-radius: 0px 10px 10px 0px;
   background-color: lightseagreen;
 }
+
+.my-list li {
+  color: goldenrod;
+}
+
+.my-list li:first-child {
+  background-color: lightgreen;
+}
+
+.my-list li:last-child {
+  background-color: lightpink;
+}
+
+.my-list li:nth-child(5) {
+  background-color: lightskyblue;
+}
+
+.my-list li:nth-child(even) {
+  background-color: lightgrey;
+}
