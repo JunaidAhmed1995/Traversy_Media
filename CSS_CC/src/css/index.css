@@ -160,3 +160,33 @@ a:active {
   background-color: #333;
   color: wheat;
 }
+
+.position-box {
+  position: relative;
+  border: 2px solid black;
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  background-image: url("../../images/bg_image.jpg");
+  background-size: contain;
+}
+
+.position-box h2 {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+
+.position-box p {
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+.positioned-fixed {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: lightseagreen;
+}
