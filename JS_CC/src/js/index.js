@@ -102,42 +102,71 @@
 
 //*Objects -- have properties i.e.{key: value} pairs
 
-const person = {
-  firstName: "junaid",
-  lastName: "ahmed",
-  age: 25,
-  hobbies: ["movies", "sports", "music"], //array within Object!
-  address: {
-    street: "T-Road",
-    block: "G",
-    house: "41",
-  }, //object within Object!
-};
+// const person = {
+//   firstName: "junaid",
+//   lastName: "ahmed",
+//   age: 25,
+//   hobbies: ["movies", "sports", "music"], //array within Object!
+//   address: {
+//     street: "T-Road",
+//     block: "G",
+//     house: "41",
+//   }, //object within Object!
+// };
 
-console.log("Person Object have: ", person); //console the whole Object [i.e. person]
-console.log("Accessing firstName: ", person.firstName); //accessing firstName property of person
-console.log("Accessing Array Element within Object: ", person.hobbies[1]); //accessing hobbies[1]
-console.log("Accessing Object property within Object: ", person.address.street); //accessing street property
+// console.log("Person Object have: ", person); //console the whole Object [i.e. person]
+// console.log("Accessing firstName: ", person.firstName); //accessing firstName property of person
+// console.log("Accessing Array Element within Object: ", person.hobbies[1]); //accessing hobbies[1]
+// console.log("Accessing Object property within Object: ", person.address.street); //accessing street property
 
-const { firstName, LastName } = person; //Destructring Object i.e pulling out properties from Object
-console.log("After Destructring FirstName: ", firstName); //now we can access firstName directly
+// const { firstName, LastName } = person; //Destructring Object i.e pulling out properties from Object
+// console.log("After Destructring FirstName: ", firstName); //now we can access firstName directly
 
-const {
-  address: { street },
-} = person; //Destructring Object property within Object. [address is an embedded object]
-console.log("Destructring Embedded Object, street: ", street);
+// const {
+//   address: { street },
+// } = person; //Destructring Object property within Object. [address is an embedded object]
+// console.log("Destructring Embedded Object, street: ", street);
 
-person.email = "junaid@gmail.com"; //add new property [i.e. email] to person Object!
-console.log("after adding new property [email], Now person have: ", person);
+// person.email = "junaid@gmail.com"; //add new property [i.e. email] to person Object!
+// console.log("after adding new property [email], Now person have: ", person);
 
-person.address.sector = "East"; //add new property to embedded Object in person object
+// person.address.sector = "East"; //add new property to embedded Object in person object
+// console.log(
+//   "after adding new property in embedded Object (address), Now person have: ",
+//   person
+// );
+
+// person.hobbies.push("gardening"); //add new array element to embedded array (hobbies) in person Object
+// console.log(
+//   "after adding new array element in hobbies, Now person have: ",
+//   person
+// );
+
+//*Arrays of Objects
+const todos = [
+  {
+    id: 1,
+    text: "Take out trash",
+    isCompleted: true,
+  },
+  {
+    id: 2,
+    text: "Meeting with boss",
+    isCompleted: true,
+  },
+  {
+    id: 3,
+    text: "Dentist Appointment",
+    isCompleted: false,
+  },
+];
+
+console.log("todos Array of Objects: ", todos);
 console.log(
-  "after adding new property in embedded Object (address), Now person have: ",
-  person
+  "printing specific property at index-2 text: ",
+  todos[1].id,
+  todos[1].text
 );
 
-person.hobbies.push("gardening"); //add new array element to embedded array (hobbies) in person Object
-console.log(
-  "after adding new array element in hobbies, Now person have: ",
-  person
-);
+const todoJSON = JSON.stringify(todos); //convert into JSON Format! --- todos contain Array-Of-Objects
+console.log("after JSON.stringnify(): ", todoJSON);
