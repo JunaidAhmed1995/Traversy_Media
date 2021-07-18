@@ -29,9 +29,27 @@
 // console.log("Type-of variable z: ", typeof z);
 
 //*String Concatenation
-const firstName = "Junaid";
-const age = 25;
+// const firstName = "Junaid";
+// const age = 25;
 
-console.log("My Name is " + firstName + " and my Age is " + age); //older method
+// console.log("My Name is " + firstName + " and my Age is " + age); //older method
 
-console.log(`My First-Name is ${firstName} and my Age is ${age}`); //template string or template literals (ES6)
+// console.log(`My First-Name is ${firstName} and my Age is ${age}`); //template string or template literals (ES6)
+
+//*String Properties and Methods
+//Keep in mind that Properties doesn't have paranthesis ().
+//where-as methods should have paranthesis ().
+
+const myString = "Hello World";
+
+console.log("length of myString is: ", myString.length); //length is a property
+
+console.log("toUpperCase myString: ", myString.toUpperCase()); //toUpperCase() is a method
+
+console.log("Sub-String of myString: ", myString.substring(0, 5)); //should return Hello
+console.log(
+  "Sub-String of myString + upperCase: ",
+  myString.substring(0, 5).toUpperCase()
+); //add methods in series
+
+console.log("Split myString to an Array: ", myString.split(" ")); //split as space(" ") as a seperator
