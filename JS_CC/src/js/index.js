@@ -27,3 +27,11 @@
 // console.log("Type-of variable x: ", typeof x);
 // console.log("Type-of variable y: ", typeof y);
 // console.log("Type-of variable z: ", typeof z);
+
+//*String Concatenation
+const firstName = "Junaid";
+const age = 25;
+
+console.log("My Name is " + firstName + " and my Age is " + age); //older method
+
+console.log(`My First-Name is ${firstName} and my Age is ${age}`); //template string or template literals (ES6)
