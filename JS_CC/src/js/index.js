@@ -143,6 +143,35 @@
 // );
 
 //*Arrays of Objects
+// const todos = [
+//   {
+//     id: 1,
+//     text: "Take out trash",
+//     isCompleted: true,
+//   },
+//   {
+//     id: 2,
+//     text: "Meeting with boss",
+//     isCompleted: true,
+//   },
+//   {
+//     id: 3,
+//     text: "Dentist Appointment",
+//     isCompleted: false,
+//   },
+// ];
+
+// console.log("todos Array of Objects: ", todos);
+// console.log(
+//   "printing specific property at index-2 text: ",
+//   todos[1].id,
+//   todos[1].text
+// );
+
+// const todoJSON = JSON.stringify(todos); //convert into JSON Format! --- todos contain Array-Of-Objects
+// console.log("after JSON.stringnify(): ", todoJSON);
+
+//*Loops [for, for-of, while, forEach, map, filter]
 const todos = [
   {
     id: 1,
@@ -161,12 +190,48 @@ const todos = [
   },
 ];
 
-console.log("todos Array of Objects: ", todos);
-console.log(
-  "printing specific property at index-2 text: ",
-  todos[1].id,
-  todos[1].text
-);
+for (let i = 0; i < 10; i++) {
+  console.log(`for loop number: ${i + 1}`);
+}
 
-const todoJSON = JSON.stringify(todos); //convert into JSON Format! --- todos contain Array-Of-Objects
-console.log("after JSON.stringnify(): ", todoJSON);
+let i = 0;
+while (i < 10) {
+  console.log(`while loop number: ${i + 1}`);
+  i++;
+}
+
+for (let i = 0; i < todos.length; i++) {
+  console.log(`for --> text: ${todos[i].text}`);
+} //simple for loop on Array of Objects
+
+for (let todo of todos) {
+  console.log(`for-of --> id: ${todo.id}`);
+} //for-of loop on Array of Objects
+
+todos.forEach((todo) => {
+  console.log(`forEach --> text: ${todo.text}`);
+}); //forEach on Array of Objects
+
+const todoIds = todos.map((todo) => {
+  return todo.id;
+}); //map returns new Array without effecting original Array
+console.log("map --> todoIds: ", todoIds); //contains only id property from todos Array
+console.log("is todoId Array? ", Array.isArray(todoIds));
+
+const todoCompleted = todos.filter((todo) => {
+  return todo.isCompleted === true; //return only those object whom isCompleted property value is true
+}); //filter returns new array having elements which passes the test condition
+console.log("filter --> todoCompleted: ", todoCompleted);
+
+const filterTextHavingTodoCompleted = todos
+  .filter((todo) => {
+    return todo.isCompleted === true;
+  }) //return those objects having isCompleted is equal to true
+  .map((todo) => {
+    return todo.text;
+  }); //then from filter it return only text property of those object who passes the filter test
+
+console.log(
+  "filter --> map --> Showing Only those text which isCompleted property value is true: ",
+  filterTextHavingTodoCompleted
+);
