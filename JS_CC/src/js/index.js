@@ -265,19 +265,35 @@
 // console.log("color: ", color);
 
 //*switch
-const color = "blue";
+// const color = "blue";
 
-switch (color) {
-  case "red":
-    console.log("color is red");
-    break;
-  case "blue":
-    console.log("color is blue");
-    break;
-  case "green":
-    console.log("color is green");
-    break;
-  default:
-    console.log("This color is not in my Knowledge");
-    break;
-}
+// switch (color) {
+//   case "red":
+//     console.log("color is red");
+//     break;
+//   case "blue":
+//     console.log("color is blue");
+//     break;
+//   case "green":
+//     console.log("color is green");
+//     break;
+//   default:
+//     console.log("This color is not in my Knowledge");
+//     break;
+// }
+
+//*Functions
+//also set default value for function paramenters i.e.
+// function addTwoNums(num1=1, num2=2){}
+
+function addTwoNums(num1, num2) {
+  console.log("addTwoNums using old way: ", num1 + num2);
+} // old method for functions!
+
+addTwoNums(10, 2);
+
+const multiplyTwoNums = (num1 = 1, num2 = 1) => {
+  console.log("multiplyTwoNums using ES6 way(arrow-function): ", num1 * num2);
+};
+
+multiplyTwoNums(2, 10);
