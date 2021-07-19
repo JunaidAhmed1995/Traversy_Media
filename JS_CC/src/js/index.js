@@ -241,19 +241,25 @@
 //(===) it matches the values and data-type as well
 //boolean operator [ or(||), and(&&), not(!) ]
 
+// const num = 10;
+// const num1 = 5;
+
+// if (num == 10) {
+//   console.log("num is 10 irrespective of data-type");
+// } //return true bcz num is equal to 10
+
+// if (num === 10) {
+//   console.log("num is 10 and data-type is also same");
+// } else {
+//   console.log("num is either not equals to 10 or data-type is different");
+// }
+
+// if (num === 15 || num1 === 5) {
+//   console.log("Either num is 10 or num1 is 5");
+// }
+
+//*Ternary Operator [test? true : false]
 const num = 10;
-const num1 = 5;
 
-if (num == 10) {
-  console.log("num is 10 irrespective of data-type");
-} //return true bcz num is equal to 10
-
-if (num === 10) {
-  console.log("num is 10 and data-type is also same");
-} else {
-  console.log("num is either not equals to 10 or data-type is different");
-}
-
-if (num === 15 || num1 === 5) {
-  console.log("Either num is 10 or num1 is 5");
-}
+const color = num > 10 ? "red" : "blue";
+console.log("color: ", color);
