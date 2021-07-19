@@ -259,7 +259,25 @@
 // }
 
 //*Ternary Operator [test? true : false]
-const num = 10;
+// const num = 10;
 
-const color = num > 10 ? "red" : "blue";
-console.log("color: ", color);
+// const color = num > 10 ? "red" : "blue";
+// console.log("color: ", color);
+
+//*switch
+const color = "blue";
+
+switch (color) {
+  case "red":
+    console.log("color is red");
+    break;
+  case "blue":
+    console.log("color is blue");
+    break;
+  case "green":
+    console.log("color is green");
+    break;
+  default:
+    console.log("This color is not in my Knowledge");
+    break;
+}
