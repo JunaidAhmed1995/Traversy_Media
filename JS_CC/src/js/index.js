@@ -301,35 +301,54 @@
 //*Object Oriented Programming(OOP)
 
 //creating object using constructor function
-function Person(firstName, lastName, dob) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.dob = new Date(dob); //convert string to Date Object
+// function Person(firstName, lastName, dob) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.dob = new Date(dob); //convert string to Date Object
 
-  //adding method to Person Object
-  //   this.getBirthYear = function () {
-  //     return this.dob.getFullYear();
-  //   };
+//   //adding method to Person Object
+//   //   this.getBirthYear = function () {
+//   //     return this.dob.getFullYear();
+//   //   };
 
-  //   this.getFullName = function () {
-  //     return `${this.firstName} ${this.lastName}`;
-  //   };
-}
+//   //   this.getFullName = function () {
+//   //     return `${this.firstName} ${this.lastName}`;
+//   //   };
+// }
 
-//adding methods to Prototype Object
-Person.prototype.getBirthYear = function () {
-  return this.dob.getFullYear();
-};
+// //adding methods to Prototype Object
+// Person.prototype.getBirthYear = function () {
+//   return this.dob.getFullYear();
+// };
 
-Person.prototype.getFullName = function () {
-  return `${this.firstName} ${this.lastName}`;
-};
+// Person.prototype.getFullName = function () {
+//   return `${this.firstName} ${this.lastName}`;
+// };
 
-const person1 = new Person("junaid", "ahmed", "05-30-1995"); //Instantiate Object Person
-console.log("person1 of Object Person using constructor function: ", person1);
-console.log("Accessing only dob in Person Object: ", person1.dob);
-console.log(
-  "Accessing Person Object Property having function, getBirthYear: ",
-  person1.getBirthYear()
-);
-console.log("Person Full Name is: ", person1.getFullName());
+// const person1 = new Person("junaid", "ahmed", "05-30-1995"); //Instantiate Object Person
+// console.log("person1 of Object Person using constructor function: ", person1);
+// console.log("Accessing only dob in Person Object: ", person1.dob);
+// console.log(
+//   "Accessing Person Object Property having function, getBirthYear: ",
+//   person1.getBirthYear()
+// );
+// console.log("Person Full Name is: ", person1.getFullName());
+
+//------------------------------------------------------------------------------
+//Classes
+class Person {
+  constructor(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob); //convert String to Date Object
+  }
+
+  //adding methods to class Person
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+} //Peron class Ends
+
+const personClass1 = new Person("Ahmed", "Hussain", "12-3-1950");
+
+console.log("Using classes PersonClass1", personClass1);
