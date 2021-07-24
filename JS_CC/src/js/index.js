@@ -286,14 +286,50 @@
 //also set default value for function paramenters i.e.
 // function addTwoNums(num1=1, num2=2){}
 
-function addTwoNums(num1, num2) {
-  console.log("addTwoNums using old way: ", num1 + num2);
-} // old method for functions!
+// function addTwoNums(num1, num2) {
+//   console.log("addTwoNums using old way: ", num1 + num2);
+// } // old method for functions!
 
-addTwoNums(10, 2);
+// addTwoNums(10, 2);
 
-const multiplyTwoNums = (num1 = 1, num2 = 1) => {
-  console.log("multiplyTwoNums using ES6 way(arrow-function): ", num1 * num2);
+// const multiplyTwoNums = (num1 = 1, num2 = 1) => {
+//   console.log("multiplyTwoNums using ES6 way(arrow-function): ", num1 * num2);
+// };
+
+// multiplyTwoNums(2, 10);
+
+//*Object Oriented Programming(OOP)
+
+//creating object using constructor function
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = new Date(dob); //convert string to Date Object
+
+  //adding method to Person Object
+  //   this.getBirthYear = function () {
+  //     return this.dob.getFullYear();
+  //   };
+
+  //   this.getFullName = function () {
+  //     return `${this.firstName} ${this.lastName}`;
+  //   };
+}
+
+//adding methods to Prototype Object
+Person.prototype.getBirthYear = function () {
+  return this.dob.getFullYear();
 };
 
-multiplyTwoNums(2, 10);
+Person.prototype.getFullName = function () {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+const person1 = new Person("junaid", "ahmed", "05-30-1995"); //Instantiate Object Person
+console.log("person1 of Object Person using constructor function: ", person1);
+console.log("Accessing only dob in Person Object: ", person1.dob);
+console.log(
+  "Accessing Person Object Property having function, getBirthYear: ",
+  person1.getBirthYear()
+);
+console.log("Person Full Name is: ", person1.getFullName());
