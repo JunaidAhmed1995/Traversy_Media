@@ -336,19 +336,19 @@
 
 //------------------------------------------------------------------------------
 //Classes
-class Person {
-  constructor(firstName, lastName, dob) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = new Date(dob); //convert String to Date Object
-  }
+// class Person {
+//   constructor(firstName, lastName, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.dob = new Date(dob); //convert String to Date Object
+//   }
 
-  //adding methods to class Person
-  getFullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
-} //Peron class Ends
+//   //adding methods to class Person
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+// } //Peron class Ends
 
-const personClass1 = new Person("Ahmed", "Hussain", "12-3-1950");
+// const personClass1 = new Person("Ahmed", "Hussain", "12-3-1950");
 
-console.log("Using classes PersonClass1", personClass1);
+// console.log("Using classes PersonClass1", personClass1);
