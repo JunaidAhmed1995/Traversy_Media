@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #cacaca;
+  padding: 10px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*to align items in X-axis when flex-direction: row;*/
+  align-items: center; /*to align items in Y-axis when flex-direction: row;*/
+}
+
+.item {
+  background-color: #ff0037;
+  color: #fff;
+  font-size: 35px;
+  padding: 20px;
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.items-3 {
+  height: 150px; /*to demonstrate the concept of align-items in flex-box*/
+}
+
+/*to align individual item.
+* it also over-ride the align-items property
+* it accepts all the values that align-items accepted*/
+.items-4 {
+  align-self: flex-start;
+}
+
+.items-1 {
+  order: 3;
+  flex-grow: 2; /*item-1 is 2 times bigger than other flex items*/
+}
+
+.items-2 {
+  order: 4;
+}
+
+.items-3 {
+  order: 0;
+}
+
+.items-4 {
+  order: 1;
+}
+
+.items-5 {
+  order: 2;
+}
+
+/*? ------Flex short-hand Property-------- */
+/*
+* flex: flex-grow, flex-shrink, flex-basis
+* flex-shrink have 0 or 1. by-default it's value is 1
+* flex-basis is some-how similar to width property
+*/
+
+/*? flex-box Summary
+display: flex;
+flex-direction: row, row-reverse, column, column-reverse;
+flex-grow: integer-value;
+flex-shrink: 1 or 0 ;
+flex-basis: % or px;
+justify-content: center, flex-start, flex-end, space-around, space-between, space-evenly;
+align-items: center, flex-start, flex-end, baseline, stretch;
+align-self: same-as-above in align-items;
+align-content: same-as-above in align-items;
+*/
