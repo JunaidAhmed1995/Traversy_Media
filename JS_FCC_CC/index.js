@@ -27,3 +27,7 @@
 //*declaring and assigning a variable
 //? [=] this is an assignment operator
 //let myVariable = "i have assigned some value";
+
+//*Escape Sequence in js
+// let myString = 'I am a "double quoted" string inside "double quotes"';
+// console.log(myString);
