@@ -50,3 +50,8 @@
 //*finding length of a string
 // let firstName = "Junaid";
 // console.log("length of first name: ", firstName.length);
+
+//*strings are immutable
+// let myString = "Jello World";
+// myString[0] = "H"; //cannot change
+// console.log(myString[0]); //gives J
