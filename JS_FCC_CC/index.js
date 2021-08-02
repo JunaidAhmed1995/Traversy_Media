@@ -254,3 +254,13 @@
 //     : "num is zero";
 // }
 // console.log(nestedTernary(-8));
+
+//*rest operator in js
+// ...args ---> it converts all arguments into single array
+// const sum = (...args) => {
+//   return args.reduce((total, value) => {
+//     return total + value;
+//   }, 0);
+// };
+
+// console.log(sum(1, 2, 3, 4, 5));
