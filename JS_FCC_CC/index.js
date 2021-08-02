@@ -46,3 +46,7 @@
 // let myString = `first line. `;
 // myString += `\nsecond line`;
 // console.log(myString);
+
+//*finding length of a string
+// let firstName = "Junaid";
+// console.log("length of first name: ", firstName.length);
