@@ -29,5 +29,11 @@
 //let myVariable = "i have assigned some value";
 
 //*Escape Sequence in js
-// let myString = 'I am a "double quoted" string inside "double quotes"';
+// let myString = "I am a \"double quoted\" string inside \"double quotes\"";
 // console.log(myString);
+
+//*double quoted string inside single quotes
+//let myString = 'I am "double quoted" string inside \'single quotes\'';
+
+//*string literals in JS
+//let myString = `I am "double quoted" string with string literals template`;
