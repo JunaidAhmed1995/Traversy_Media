@@ -200,3 +200,13 @@
 
 // console.log("copy of collection: ", collectionCopy);
 // console.log("after update: ", updateRecord(3, "tracks", ""));
+
+//*while loop
+// const myArray = [];
+// let counter = 0;
+
+// while (counter < 5) {
+//   myArray[counter] = counter + 1;
+//   counter++;
+// }
+// console.log(myArray);
