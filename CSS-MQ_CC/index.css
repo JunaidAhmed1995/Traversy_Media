@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#size {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+}
+
+/**Media Queries here*/
+@media (min-width: 0px) {
+  .container {
+    background-color: lightcyan;
+  }
+}
+
+/*Mobile*/
+@media (min-width: 576px) {
+  .container {
+    background-color: lightcoral;
+  }
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+  .container {
+    background-color: lightblue;
+  }
+}
+
+/*Laptop*/
+@media (min-width: 992px) {
+  .container {
+    background-color: lightgreen;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+  .container {
+    background-color: lightseagreen;
+  }
+}
