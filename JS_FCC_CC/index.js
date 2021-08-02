@@ -236,3 +236,11 @@
 //   return parseInt(str, base);
 // }
 // console.log("str to int with base: ", convertToIntegerWithRadix("1010", 2));
+
+//*ternary operator in js
+// function isEqual(a, b) {
+//   return a === b ? true : false;
+//   OR;
+//   return a === b;
+// } both return gives the same result
+// console.log(isEqual(2, 12));
