@@ -87,3 +87,28 @@
 
 // console.log(`Local Outfit: ${myOutFit()}`); //sweater
 // console.log(`Global Outfit: ${outerWear}`); //T-shirt
+
+//*Switch in js
+
+// let val = 1;
+// let answer = "default";
+
+// switch (val) {
+//   case "bob":
+//     answer = "Marley";
+//     break;
+//   case 42:
+//     answer = "The Answer";
+//     break;
+//   case 1:
+//     answer = "There is no #1";
+//     break;
+//   case 99:
+//     answer = "Missed me by this much!";
+//     break;
+//   case 7:
+//     answer = "Ate Nine";
+//     break;
+// }
+
+// console.log(answer);
