@@ -112,3 +112,14 @@
 // }
 
 // console.log(answer);
+
+//*Objects in JS
+
+// const myObject = {
+//   "first name": "junaid",
+//   lastName: "ahmed",
+//   age: 25,
+// };
+
+// console.log(myObject.lastName); //accessing object property using Dot[.] Notation
+// console.log(myObject["first name"]); //accessing object property using bracket[] notation
