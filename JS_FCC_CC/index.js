@@ -244,3 +244,13 @@
 //   return a === b;
 // } both return gives the same result
 // console.log(isEqual(2, 12));
+
+//*nested ternary
+// function nestedTernary(num) {
+//   return num > 0
+//     ? "num is positive"
+//     : num < 0
+//     ? "num is negative"
+//     : "num is zero";
+// }
+// console.log(nestedTernary(-8));
