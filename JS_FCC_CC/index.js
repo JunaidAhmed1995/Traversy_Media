@@ -162,3 +162,41 @@
 
 // const copyMyMusic = JSON.parse(JSON.stringify(myMusic)); //create a copy of Object in JS
 // console.log(copyMyMusic);
+
+// const collection = {
+//   1: {
+//     album: "album 1",
+//     artist: "artist 1",
+//     tracks: ["track 1.1", "track 1.2"],
+//   },
+//   2: {
+//     album: "album 2",
+//     artist: "artist 2",
+//     tracks: ["track 2.1", "track 2.2"],
+//   },
+//   3: {
+//     artist: "artist 3",
+//     tracks: [],
+//   },
+//   4: {
+//     album: "album 4",
+//   },
+// };
+
+// const collectionCopy = JSON.parse(JSON.stringify(collection)); //creating collection copy
+
+// function updateRecord(id, property, value) {
+//   if (value === "") {
+//     delete collection[id][property];
+//   } else if (property === "tracks") {
+//     collection[id][property] = collection[id][property] || []; //create a property with empty array if NOT exist!
+//     collection[id][property].push(value);
+//   } else {
+//     collection[id][property] = value;
+//   }
+
+//   return collection;
+// }
+
+// console.log("copy of collection: ", collectionCopy);
+// console.log("after update: ", updateRecord(3, "tracks", ""));
