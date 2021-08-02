@@ -55,3 +55,11 @@
 // let myString = "Jello World";
 // myString[0] = "H"; //cannot change
 // console.log(myString[0]); //gives J
+
+//*Arrays method's in JS
+// const myArray = [1,2,3,4,5];
+// const nestedArray = [[1,2,3], [4,5,6]];
+// push() add element at the end
+// unshift() add element at the beginning
+// pop() remove element at the end
+// shift() remove element at the beginning
