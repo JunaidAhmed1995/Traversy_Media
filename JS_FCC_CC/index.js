@@ -206,7 +206,14 @@
 // let counter = 0;
 
 // while (counter < 5) {
-//   myArray[counter] = counter + 1;
+//   myArray[counter] = counter + 1; //myArray.push(counter + 1)
 //   counter++;
 // }
 // console.log(myArray);
+
+//*for loop
+const forArray = [];
+for (let i = 0; i < 5; i++) {
+  forArray.push(i + 1);
+}
+console.log(forArray);
