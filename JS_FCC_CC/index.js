@@ -129,3 +129,36 @@
 // let lookupProperty = 'lastName'; //the property which we are looking for in Object
 // let lookupPropVal = myObject[lookupProperty]; //access property through variable in myObject
 // return myObject.hasOwnProperty(propertyName); //return either True or False
+
+//*Manipulating complex objects
+// const myMusic = [
+//   //object-1
+//   {
+//     artist: {
+//       first_name: "junaid",
+//       last_name: "ahmed",
+//       age: 25,
+//     },
+//     title: "Piano Man",
+//     release_year: 2005,
+//     formats: ["cd", "8t", "lp", "4k"],
+//     gold: true,
+//   },
+//   //object-2
+//   {
+//     artist: {
+//       first_name: "ali",
+//       last_name: "zafar",
+//       age: 45,
+//     },
+//     title: "singer",
+//     release_year: 2002,
+//     formats: ["cd", "4k", "8k"],
+//     gold: false,
+//   },
+// ];
+// console.log(myMusic[1].artist.first_name); //return first_name of Object-2
+// console.log(myMusic[0].formats[3]); //return 3 element in formats array of Object-1
+
+// const copyMyMusic = JSON.parse(JSON.stringify(myMusic)); //create a copy of Object in JS
+// console.log(copyMyMusic);
