@@ -37,3 +37,7 @@
 
 //*string literals in JS
 //let myString = `I am "double quoted" string with string literals template`;
+
+//*other escape sequence characters in JS
+// var myString = `firstline\n\t\\secondline\nthirdline`;
+// console.log(myString);
