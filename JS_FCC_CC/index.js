@@ -123,3 +123,9 @@
 
 // console.log(myObject.lastName); //accessing object property using Dot[.] Notation
 // console.log(myObject["first name"]); //accessing object property using bracket[] notation
+// myObject.age = 30; //change the property value of Object
+// myObject.color = 'white'; //adding new property to Object
+// delete myObject.age; //delete the age property from Object
+// let lookupProperty = 'lastName'; //the property which we are looking for in Object
+// let lookupPropVal = myObject[lookupProperty]; //access property through variable in myObject
+// return myObject.hasOwnProperty(propertyName); //return either True or False
