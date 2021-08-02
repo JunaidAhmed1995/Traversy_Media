@@ -224,3 +224,15 @@
 // }
 
 // console.log(getRandomNumber(1, 10));
+
+//*parseInt
+// function convertToInteger(str) {
+//   return parseInt(str);
+// }
+// console.log("String to integer: ", convertToInteger("56"));
+
+//*parseInt with radix
+// function convertToIntegerWithRadix(str, base) {
+//   return parseInt(str, base);
+// }
+// console.log("str to int with base: ", convertToIntegerWithRadix("1010", 2));
