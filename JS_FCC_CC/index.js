@@ -10,7 +10,7 @@
  ?7: object
  */
 
-//*Variable's is JS
+//*Variable's in JS
 //There are three ways to declare variables in Java-Script
 //?1: var
 //?2: let
@@ -22,7 +22,7 @@
 
 //*declaring a variable
 //? Make a habit to close Java-Script statements with semi-colom (;)
-//let myVariable;
+//let myVariable; //use camelCase convention for variables
 
 //*declaring and assigning a variable
 //? [=] this is an assignment operator
