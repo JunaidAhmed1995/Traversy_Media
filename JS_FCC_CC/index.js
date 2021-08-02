@@ -63,3 +63,16 @@
 // unshift() add element at the beginning
 // pop() remove element at the end
 // shift() remove element at the beginning
+
+//*functions is JS
+// function reUseAbleFunction() {
+//   console.log("I appear on the console. Every time i'm called");
+// }
+
+// reUseAbleFunction(); //calling a function
+
+// function functionWithArguments(a, b) {
+//   console.log(`value of a: ${a} \nvalue of b: ${b}`);
+// }
+
+// functionWithArguments(5, 10);
