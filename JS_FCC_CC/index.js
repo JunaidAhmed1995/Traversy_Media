@@ -41,3 +41,8 @@
 //*other escape sequence characters in JS
 // var myString = `firstline\n\t\\secondline\nthirdline`;
 // console.log(myString);
+
+//*String concatenation
+// let myString = `first line. `;
+// myString += `\nsecond line`;
+// console.log(myString);
