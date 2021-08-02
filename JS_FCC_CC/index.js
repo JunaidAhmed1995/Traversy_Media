@@ -76,3 +76,14 @@
 // }
 
 // functionWithArguments(5, 10);
+
+//*local vs global variable
+// let outerWear = "T-shirt"; //global variable
+
+// function myOutFit() {
+//   let outerWear = "Sweater"; //local variable
+//   return outerWear;
+// }
+
+// console.log(`Local Outfit: ${myOutFit()}`); //sweater
+// console.log(`Global Outfit: ${outerWear}`); //T-shirt
