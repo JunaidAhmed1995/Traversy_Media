@@ -212,8 +212,15 @@
 // console.log(myArray);
 
 //*for loop
-const forArray = [];
-for (let i = 0; i < 5; i++) {
-  forArray.push(i + 1);
-}
-console.log(forArray);
+// const forArray = [];
+// for (let i = 0; i < 5; i++) {
+//   forArray.push(i + 1);
+// }
+// console.log(forArray);
+
+//*Random number's
+// function getRandomNumber(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomNumber(1, 10));
