@@ -19,3 +19,11 @@
 //var variables can re-assign and re-declare
 //let variables can re-assign BUT cannot re-declare in the same scope
 //const variables cannot re-assign or re-declare in the same scope
+
+//*declaring a variable
+//? Make a habit to close Java-Script statements with semi-colom (;)
+//let myVariable;
+
+//*declaring and assigning a variable
+//? [=] this is an assignment operator
+//let myVariable = "i have assigned some value";
