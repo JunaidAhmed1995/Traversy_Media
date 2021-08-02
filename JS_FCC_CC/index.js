@@ -264,3 +264,14 @@
 // };
 
 // console.log(sum(1, 2, 3, 4, 5));
+
+//*spread operator in js
+// const monthArr = ["jan", "feb", "mar", "apr", "may"];
+// let monthArrCopy = [];
+
+// // monthArrCopy = monthArr; // this does not copy monthArr to monthArrCopy
+// // monthArr[0] = "January"; // when we change content of monthArr, it also reflect in monthArrCopy
+// //but using spread operator we can actually copy array
+// monthArrCopy = [...monthArr]; //actually copying array using spread operator
+// monthArr[0] = "January";
+// console.log(monthArrCopy);
