@@ -25,4 +25,21 @@
    [div + p] --> it select the p element that occurs direcly after div
 4. general adjacent selector: it select all element that is directly after specific element.
    [div ~ p] --> it select all p element that occurs after div
+
+///** Attribute selector
+1. img[src^="../images/"]{
+     style whatever you want
+     it apply on all images whose source attribute starts with above value
+     ^ means matches value at the Start
+   }
+2. img[src$="../images/"]{
+     style whatever you want
+     it apply on all images whose source attribute Ends with above value 
+     $ means matches value at the End
+   }
+3. img[src*="../images/"]{
+     style whatever you want
+     it apply on all images whose source attribute contains above value
+     * means matches value anywhere[start, end, mid, etc] in the attribute
+   }
 */
