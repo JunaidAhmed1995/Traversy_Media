@@ -14,4 +14,15 @@
    where (n) is any positive integer.
    before colon(:) Parent element
    after color(:) child-selector
+
+///** Sibling Selector's:
+1. decendent selector: it selects all the child's (directly or indirectly).
+   [div p] --> it selects all p element in div whether they are direct child of div or Not.
+2. child selector: it selects all the direct child Only.
+   [div > p] --> it selects all p elements who are direct child of div
+3. adjacent sibling selector: it select the element that is directly after another specific element
+   sibling elements must have the same parent element.
+   [div + p] --> it select the p element that occurs direcly after div
+4. general adjacent selector: it select all element that is directly after specific element.
+   [div ~ p] --> it select all p element that occurs after div
 */
