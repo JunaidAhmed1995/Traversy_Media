@@ -2,4 +2,10 @@
 1. Element Selector [h1, h2, p, b, etc.]. Actually they are html tags.
 2. Class Selector [.my-class, .header-class, etc]. Using dot(.) to select class's, then style them
 3. Id Selector [#my-id, #doc-1, etc]. using hash(#) to select id's, then style them
+
+* Power of Selector's:
+1. id selector has more power than class and element selector. 
+   CSS apply with id selector over-rides other(class && element) selector's CSS
+2. class selector has more power than element selector.
+3. Element selector has the least power in all selector's
 */
