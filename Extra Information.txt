@@ -1,0 +1,12 @@
+VS-Code Extentions:
+
+1- Auto Close Tag [jun han]
+2- Auto Rename Tag [jun han]
+3- Better Comments [aaron bond]
+4- Bracket Pair Colorizer [coenraads]
+5- Kite Autocomplete [kite]
+6- Live Server [ritwick dey]
+7- One Dark Pro [binaryify]
+8- Prettier Code Formatter [prettier]
+9- Quokka.js [wallaby.js]
+10- vscode icons [vscode icons team]
